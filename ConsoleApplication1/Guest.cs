@@ -10,12 +10,9 @@ namespace ConsoleApplication1
     {
         //
         public int id { get; set; }
-        public string prenom { get; set; }
-        public string nomFamille { get; set; }
+        public string lastName { get; set; }
+        public string firstName { get; set; }
         public int age { get; set; }
-        public int idCouple { get; set; }
-        public int idGroupe { get; set; }
-        public bool isPlace { get; set; }
-        public int pointContent { get; set; }
+        public int idCouple { get; set; }  
     }
 }

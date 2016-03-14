@@ -9,16 +9,14 @@ namespace ConsoleApplication1
     public class Table
     {
         public int id { get; set; }
-        public string nom { get; set; }
-        public bool isParticulier { get; set; }
+        public string nom { get; set; }    
         public List<Guest> list { get; set; }
         public int nbPlaceMax { get; set; }
            
         public Table()
         {
             id = 0;
-            nom = "";
-            isParticulier = false;
+            nom = "";            
             list = null;
             nbPlaceMax = 0;
         }
@@ -29,7 +27,6 @@ namespace ConsoleApplication1
             this.nom = nom;
             this.list = new List<Guest>(nbPlaceMax);
             this.nbPlaceMax = nbPlaceMax;
-            this.isParticulier = false;
         }
         public int nbPlaceRest() { return (list == null) ? nbPlaceMax : nbPlaceMax - list.Count; }
     }
